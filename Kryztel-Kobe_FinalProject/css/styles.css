@@ -1,0 +1,286 @@
+:root {
+    --afi-blue: #2b679b;
+    --afi-blue-dark: #1f4f78;
+    --afi-card-radius: 24px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4.5rem;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #212529;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-nav {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Top Brand Header */
+/* Top Brand Header */
+.afi-brand-header {
+    overflow: hidden;
+    padding: 0.25rem 0 !important;
+}
+
+.afi-header-logo {
+    height: 95px;
+    width: auto;
+    object-fit: contain;
+    /* Trims the baked-in drop shadow off the sides and bottom of the image */
+    clip-path: inset(2px 18px 10px 18px);
+    transform: scale(1.15);
+}
+
+.afi-rings {
+    color: var(--afi-blue);
+    margin: 0 2px;
+}
+
+.afi-logo-sub {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.afi-logo-tagline {
+    font-size: 0.78rem;
+    color: #555;
+}
+
+/* Agency-style Navbar Customized to Canva Top Bar */
+#mainNav {
+    transition: padding 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+#mainNav.navbar-shrink {
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+}
+
+.afi-nav-list .nav-item {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+}
+
+.afi-nav-list .nav-item:last-child {
+    border-right: none;
+}
+
+.afi-nav-list .nav-link {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #111;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    padding: 0.75rem 0.5rem;
+}
+
+.afi-nav-list .nav-link:hover,
+.afi-nav-list .nav-link.active {
+    color: var(--afi-blue);
+}
+
+/* Signature Blue Buttons */
+.bg-afi-blue {
+    background-color: var(--afi-blue);
+}
+
+.btn-afi {
+    background-color: var(--afi-blue);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-afi:hover {
+    background-color: var(--afi-blue-dark);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Home Hero Section */
+.min-vh-75 {
+    min-height: 78vh;
+}
+
+.afi-side-menu li {
+    border-bottom: 1px solid #d9d9d9;
+    padding: 0.9rem 0.25rem;
+}
+
+.afi-side-menu a {
+    color: #111;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: underline;
+    display: block;
+}
+
+.afi-side-menu a:hover {
+    color: var(--afi-blue);
+}
+
+/* Uses your "We Are All In The Service Of The Filipino" building photo */
+.hero-bg-wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url('../images/Screenshot 2026-11-26 055417.jpg') center/cover no-repeat;
+    background-color: #36454f;
+}
+
+.hero-photo-frame {
+    max-width: 960px;
+    border-radius: 28px;
+    overflow: hidden;
+}
+
+/* Shared Section Backgrounds & White Cards */
+.page-section {
+    padding: 4.5rem 0;
+}
+
+.section-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.advocacies-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                      url('../images/advocacies-bg.jpg');
+    background-color: #2f3e46;
+}
+
+/* Uses your underwater diver photo (donate-bgg.jpg) */
+.donate-bg {
+    background-image: linear-gradient(rgba(12, 40, 62, 0.45), rgba(12, 40, 62, 0.45)),
+                      url('../images/donate-bgg.jpg');
+    background-color: #1c3d5a;
+}
+
+.partners-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+                      url('../images/partners-bg.jpg');
+    background-color: #343a40;
+}
+
+.news-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                      url('../images/news-bg.jpg');
+    background-color: #495057;
+}
+
+.afi-card {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: var(--afi-card-radius);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Impact Stat Boxes */
+.impact-stat-box {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 14px;
+    padding: 0.9rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #111;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: #444;
+}
+
+/* Donate Category Buttons */
+.btn-donate-option {
+    background-color: #ffffff;
+    color: #111;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: 1px solid #e2e6ea;
+    border-radius: 12px;
+    padding: 0.85rem 0.75rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+}
+
+.btn-donate-option:hover {
+    background-color: var(--afi-blue);
+    color: #fff;
+    border-color: var(--afi-blue);
+}
+
+/* Partner Grid Tiles */
+.partner-tile {
+    background: #ffffff;
+    border-radius: 16px;
+    height: 125px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease;
+}
+
+.partner-tile:hover {
+    transform: translateY(-4px);
+}
+
+.partner-tile img {
+    max-width: 100%;
+    max-height: 90px;
+    object-fit: contain;
+}
+
+/* Newsletter Cards */
+.newsletter-card {
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.newsletter-card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.newsletter-link {
+    color: #555;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 0.95rem;
+}
+
+.newsletter-link:hover {
+    color: var(--afi-blue);
+}
+
+/* Agency Footer Social Buttons */
+.btn-social {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 991.98px) {
+    .afi-nav-list .nav-item {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+}
